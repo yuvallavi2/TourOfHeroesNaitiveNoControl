@@ -1,0 +1,10 @@
+{
+  "components": [
+    "SPAcontainer",
+    "TopPanel",
+    "MainMenu",
+    "MainCanvasHelloWorld",
+    "Dashboard",
+    "Heroes"
+  ]
+}

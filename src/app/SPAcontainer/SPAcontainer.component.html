@@ -1,0 +1,32 @@
+<form
+  novalidate
+  [formGroup]="screenFormGroup"
+>
+  <div
+    magicnc="SPAcontainer"
+    class="SPAcontainer"
+  >
+
+    <ndc-dynamic
+      magicnc="TopPanel"
+      class="TopPanel"
+      [ndcDynamicComponent]="mgGetComp('TopPanel')"
+      [ndcDynamicInputs]="mgGetParameters('TopPanel')"
+    >
+    </ndc-dynamic>
+    <ndc-dynamic
+      magicnc="MainMenu"
+      class="MainMenu"
+      [ndcDynamicComponent]="mgGetComp('MainMenu')"
+      [ndcDynamicInputs]="mgGetParameters('MainMenu')"
+    >
+    </ndc-dynamic>
+    <ndc-dynamic
+      magicnc="MainCanvas"
+      class="MainCanvas"
+      [ndcDynamicComponent]="mgGetComp('MainCanvas')"
+      [ndcDynamicInputs]="mgGetParameters('MainCanvas')"
+    >
+    </ndc-dynamic>
+  </div>
+</form>

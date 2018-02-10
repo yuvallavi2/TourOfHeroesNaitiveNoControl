@@ -1,0 +1,45 @@
+<form
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        magicnc="Heroes"
+        class="Heroes"
+    >
+        <label
+            magicnc="Lable"
+            class="Lable"
+        >
+            </label>
+            <ul
+                class="tmpID6"
+                magicnc="tmpID6"
+                class="tmpID6"
+            >
+                <li *ngFor="let row of task.Records.list">
+                    <div
+                        *ngIf="mgIfRowCreated(row.rowId)"
+                        id="row"
+                    >
+                        <form
+                            [formGroup]="mgGetFormGroupByRow(row.rowId)"
+                            class="tmpID6_table_row"
+                        >
+                            <div
+                                magicnc="tmpID7"
+                                class="tmpID7"
+                            >
+                                <input
+                                    type="text"
+                                    magicnc="Name"
+                                    [rowId]="row.rowId"
+                                    class="Name twod_border"
+                                    formControlName="Name"
+                                />
+                                </div>
+                                </form>
+                                </div>
+                </li>
+                </ul>
+                </div>
+                </form>

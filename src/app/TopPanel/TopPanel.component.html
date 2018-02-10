@@ -1,0 +1,26 @@
+<form
+  novalidate
+  [formGroup]="screenFormGroup"
+>
+  <div
+    magicnc="TopPanel"
+    class="TopPanel"
+  >
+    <mat-toolbar color="primary">
+      <div>
+        <img
+          magicnc="Logo"
+          class="Logo"
+        />
+        <button mat-icon-button (click)="snav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <label
+        magicnc="MainLable"
+        class="MainLable"
+      >
+      </label>
+    </mat-toolbar>
+  </div>
+</form>

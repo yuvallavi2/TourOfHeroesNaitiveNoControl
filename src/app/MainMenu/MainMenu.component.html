@@ -1,0 +1,31 @@
+<form
+  novalidate
+  [formGroup]="screenFormGroup"
+>
+  <div
+    magicnc="MainMenu"
+    class="MainMenu"
+  >
+    <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="0">
+      <mat-sidenav #snav [mode]="'side'">
+
+      </mat-sidenav>
+
+      <mat-sidenav-content>
+        <a
+          href="#"
+          magicnc="bDashborad"
+          class="bDashborad"
+        >
+        </a>
+        <a
+          href="#"
+          magicnc="bHeroes"
+          class="bHeroes"
+        >
+        </a>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+
+</form>
